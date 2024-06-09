@@ -94,7 +94,7 @@ obstacles island_definition(vertex center, obstacles &obs, polygon &centroids,
 
   obstacles valid_obs{};
   double distance = 0.0;
-  uint obs_idx = 0;
+  unsigned int obs_idx = 0;
 
   for (auto p_itr = centroids.begin(); p_itr != centroids.end(); ++p_itr) {
     distance = std::pow(std::pow(center.first - p_itr->first, 2.0) +
@@ -114,8 +114,8 @@ obstacles island_definition(vertex center, obstacles &obs, polygon &centroids,
 bool SAT_collision(polygon &P1, obstacles &obs) {
 
   // Clear criteria
-  uint OBS_NUMBER = obs.size();
-  uint OBS_PASS = 0;
+  unsigned int OBS_NUMBER = obs.size();
+  unsigned int OBS_PASS = 0;
 
   // Iterator definition
   obstacles::iterator o_itr;
@@ -227,8 +227,8 @@ bool SAT_collision(polygon &P1, obstacles &obs) {
 bool SAT_collision_circle(vertex center, double radius, obstacles &obs) {
 
   // Clear criteria
-  uint OBS_NUMBER = obs.size();
-  uint OBS_PASS = 0;
+  unsigned int OBS_NUMBER = obs.size();
+  unsigned int OBS_PASS = 0;
 
   // Iterator definition
   obstacles::iterator o_itr;
