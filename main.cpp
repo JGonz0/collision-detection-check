@@ -1,6 +1,6 @@
 #include <GL/freeglut_std.h>
-#include <GL/gl.h>
-#include <GL/glut.h>
+//#include <GL/gl.h>
+//#include <GL/glut.h>
 #include <random>
 #include <utility>
 #include <vector>
